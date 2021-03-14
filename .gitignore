@@ -1,11 +1,14 @@
-CMakeLists.txt.user
-CMakeCache.txt
-CMakeFiles
-CMakeScripts
-Testing
-Makefile
-cmake_install.cmake
-install_manifest.txt
+#ignorar resultados de compilacion
+build/
+#ignorar vscode
+.vscode/
+#ignorar visual studio
+.vs/
+out/
+#ignorar archivos de clangd
+.clangd
+#ignorar idea
+.idea
+cmake-build-debug/
+#ignorar comandos de compilacion (para clangd entre otros)
 compile_commands.json
-CTestTestfile.cmake
-_deps
