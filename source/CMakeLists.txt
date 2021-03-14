@@ -4,13 +4,13 @@ set(CMAKE_CXX_STANDARD 17)
 
 
 set(src_include_cppconmenu
-    include/conmenu/menu.hpp
-    include/conmenu/opcion.hpp
+	include/conmenu/menu.hpp
+	include/conmenu/opcion.hpp
 )
 
 set(src_cppconmenu
-    ${src_include_cppconmenu}
-    cppconmenu/menu.cpp
+	${src_include_cppconmenu}
+	src/cppconmenu/menu.cpp
 )
 
 set(src_include
@@ -18,12 +18,12 @@ set(src_include
 )
 
 set(src_files
-    ${src_cppconmenu}
+	${src_cppconmenu}
 )
 
 set(sources
-    ${src_include}
-    ${src_files}
+	${src_include}
+	${src_files}
 )
 
 add_executable(${PROJECT_NAME} ${source} ${sources} src/source.cpp)
