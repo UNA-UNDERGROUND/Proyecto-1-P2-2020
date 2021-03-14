@@ -16,4 +16,4 @@ set(sources
 )
 
 add_executable(${PROJECT_NAME} ${source} src/source.cpp)
-target_include_directories(source PRIVATE include)
+target_include_directories(${PROJECT_NAME} PRIVATE include)
