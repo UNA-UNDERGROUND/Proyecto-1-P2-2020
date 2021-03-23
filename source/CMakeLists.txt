@@ -13,18 +13,22 @@ set(src_cppconmenu
 	src/cppconmenu/menu.cpp
 )
 
-set(src_include
-
+set(src_include_universidad
+	include/universidad/universidad.hpp
+)
+set(src_universidad
+	${src_include_universidad}
+	src/universidad/universidad.cpp
 )
 
 set(src_files
 	${src_cppconmenu}
+	${src_universidad}
 )
 
 set(sources
-	${src_include}
 	${src_files}
 )
 
-add_executable(${PROJECT_NAME} ${source} ${sources} src/source.cpp)
+add_executable(${PROJECT_NAME} ${sources} src/source.cpp)
 target_include_directories(${PROJECT_NAME} PRIVATE include)
